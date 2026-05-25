@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0b0f16;
+  color: #f3eee7;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(circle at 16% 38%, rgba(19, 93, 97, 0.20), transparent 32%),
+    radial-gradient(circle at 80% 18%, rgba(245, 174, 68, 0.10), transparent 28%),
+    linear-gradient(135deg, #090d13 0%, #111722 55%, #080b10 100%);
+}
+
+.card-line {
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.input-dark {
+  @apply w-full rounded-xl border border-slate-700 bg-panelSoft px-4 py-3 text-cream placeholder:text-slate-500 outline-none focus:border-gold;
+}
+
+.btn-gold {
+  @apply rounded-xl bg-gold px-5 py-3 font-semibold text-black transition hover:bg-[#ffbf5f] disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.btn-dark {
+  @apply rounded-xl border border-slate-700 bg-panel px-5 py-3 font-semibold text-cream transition hover:border-gold hover:text-gold;
+}
